@@ -1,0 +1,72 @@
+---
+title: 'How to Write MDX Pages'
+date: '2025-01-25'
+tags: ['mdx', 'javascript', 'react']
+draft: false
+summary: 'Learn the basics of writing MDX pages and how to integrate them into your project.'
+images: ['/static/blogs/how-to-write-mdx-pages.jpeg']
+authors: ['default']
+---
+
+Writing content with **MDX** (Markdown + JSX) combines the simplicity of Markdown with the flexibility of React components, enabling you to write interactive and dynamic content.
+
+In this blog, you'll learn the basics of creating MDX pages and how to structure them for your projects.
+
+---
+
+## What is MDX?
+
+**MDX** stands for Markdown with JSX. It lets you write Markdown and embed React components directly into your content. This is particularly useful for creating blogs, documentation, or any site with rich, interactive content.
+
+### Why Use MDX?
+
+1. **Write Markdown and React Together**  
+   Combine the simplicity of Markdown for text with React for interactivity.
+
+2. **Component Reusability**  
+   Use existing React components like buttons, code blocks, or custom widgets.
+
+3. **Easy Integration**  
+   Works seamlessly with frameworks like Next.js, Gatsby, and others.
+
+---
+
+## Writing Your First MDX Page
+
+To create an MDX page, you need:
+1. An **MDX file** (e.g., `my-first-blog.mdx`).
+2. A system to render MDX, such as **Next.js** with `@next/mdx` or Gatsby with `gatsby-plugin-mdx`.
+
+### The Anatomy of an MDX Page
+
+Here’s a basic structure:
+
+```mdx
+---
+title: 'Your Blog Title'
+date: 'YYYY-MM-DD'
+tags: ['tag1', 'tag2']
+draft: false
+summary: 'A short summary of the blog post.'
+images: ['/path-to-feature-image.jpg']
+authors: ['default']
+---
+
+# Welcome to Your First MDX Page
+
+Write content using Markdown syntax. For example:
+
+- Use `#` for headings.
+- Write **bold** or *italic* text.
+- Create lists:
+  - Bullet points
+  - Sub-points
+
+## Embedding React Components
+
+You can import and use React components inside an MDX file:
+
+```jsx
+import { Button } from '@/components/ui/button';
+
+<Button onClick={() => alert('Hello!')}>Click Me</Button>
