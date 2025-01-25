@@ -142,13 +142,13 @@ export default function PostLayout({
                 {children}
               </div>
               <div className='pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
-                <Link href={discussUrl(slug)} rel='nofollow'>
+                {/* <Link href={discussUrl(slug)} rel='nofollow'>
                   {'Discuss on Twitter'}
-                </Link>
+                </Link> */}
                 {` • `}
                 <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
               </div>
-              <Comments frontMatter={frontMatter} />
+              {/* <Comments frontMatter={frontMatter} /> */}
             </div>
             <footer>
               <div className='xl:sticky xl:top-32'>

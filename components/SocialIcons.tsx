@@ -35,7 +35,7 @@ function resolveIcon(entry: Tuple<string>): React.ReactNode {
 
   const props: IconBaseProps = {
     className: 'icon cursor-pointer text-2xl mr-6',
-    color: Colors[type],
+    color: type === ContactType.github ? '#f0ebeb' : Colors[type],
   };
 
   let icon: Maybe<React.ReactNode> = null;
@@ -57,9 +57,9 @@ function resolveIcon(entry: Tuple<string>): React.ReactNode {
     //   icon = <YoutubeIcon {...props} />;
     //   break;
 
-    case ContactType.email:
-      icon = <MailIcon {...props} />;
-      break;
+    // case ContactType.email:
+    //   icon = <MailIcon {...props} />;
+    //   break;
 
     // case ContactType.buymeacoffee:
     //   icon = <BuymeacoffeeIcon {...props} />;
