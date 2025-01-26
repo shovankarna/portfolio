@@ -31,37 +31,4 @@ export interface Project {
   subProjects: SubProject[];
 }
 
-export const projects: Project[] = [
-  {
-    title: 'My Portfolio',
-    slug: 'my-portfolio', // Unique and descriptive slug
-    banner: 'https://example.com/banner.png',
-    website: 'https://example.com',
-    description: 'A portfolio project showcasing my work.',
-    shortDescription: 'A portfolio project.',
-    repository: 'https://github.com/username/portfolio',
-    stack: [], // Add related tech stack
-    dimensions: defaultDimensions,
-    screenshots: [
-      'https://example.com/screenshot1.png',
-      'https://example.com/screenshot2.png',
-    ],
-    deployment: {
-      web: 'https://example.com',
-      android: '',
-      ios: '',
-    },
-    subProjects: [
-      {
-        title: 'Subproject 1',
-        description: 'Details about Subproject 1.',
-        repository: 'https://github.com/username/subproject1',
-        deployment: {
-          web: '',
-          android: '',
-          ios: '',
-        },
-      },
-    ],
-  },
-];
+export const projects: Project[] = []; // Empty projects array
