@@ -14,8 +14,11 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 const { projects } = config;
 
 export async function getStaticPaths() {
+  const paths = projects
+    .filter(({ slug }) => slug !== 'projects') // Exclude conflicting slug
+    .map(({ slug }) => ({ params: { slug } }));
   return {
-    paths: projects.map(({ slug }) => ({ params: { slug } })),
+    paths,
     fallback: false,
   };
 }

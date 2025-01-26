@@ -33,31 +33,33 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: '', // Add project title
-    slug: '', // Add slug (unique identifier)
-    banner: '', // Add URL for banner image
-    website: '', // Add website or live demo link
-    description: '', // Add detailed project description
-    shortDescription: '', // Add a brief summary (optional)
-    repository: null, // Add repository link or leave null
-    stack: [], // Add related tech stack from Stack enum
-    dimensions: defaultDimensions, // Default or custom dimensions
-    screenshots: [], // Add URLs for screenshots
+    title: 'My Portfolio',
+    slug: 'my-portfolio', // Unique and descriptive slug
+    banner: 'https://example.com/banner.png',
+    website: 'https://example.com',
+    description: 'A portfolio project showcasing my work.',
+    shortDescription: 'A portfolio project.',
+    repository: 'https://github.com/username/portfolio',
+    stack: [], // Add related tech stack
+    dimensions: defaultDimensions,
+    screenshots: [
+      'https://example.com/screenshot1.png',
+      'https://example.com/screenshot2.png',
+    ],
     deployment: {
-      web: '', // Add web deployment link or leave empty
-      android: '', // Add Android deployment link or leave empty
-      ios: '', // Add iOS deployment link or leave empty
+      web: 'https://example.com',
+      android: '',
+      ios: '',
     },
     subProjects: [
-      // Add sub-projects or leave as an empty array
       {
-        title: '', // Add sub-project title
-        description: '', // Add description
-        repository: null, // Add repository link or leave null
+        title: 'Subproject 1',
+        description: 'Details about Subproject 1.',
+        repository: 'https://github.com/username/subproject1',
         deployment: {
-          web: '', // Add deployment link or leave empty
-          android: '', // Add deployment link or leave empty
-          ios: '', // Add deployment link or leave empty
+          web: '',
+          android: '',
+          ios: '',
         },
       },
     ],

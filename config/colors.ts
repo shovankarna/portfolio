@@ -32,4 +32,10 @@ export const Colors = {
   docker: '#2496ED',
   git: '#F05032',
   github: '#181717',
+
+  twitter: "#1da1f2",
+  email: "#c71610",
+  linkedin: "#0077B5",
+  facebook: "#1877F2",
+  reddit: "#FF5700"
 };
