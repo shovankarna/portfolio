@@ -7,7 +7,7 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://shovankarna.com',
-  siteRepo: 'https://github.com/shovankarn/portfolio',
+  siteRepo: 'https://github.com/shovankarna/portfolio',
   siteLogo: '/static/images/logo.png',
   image: '/static/avatar.jpg',
   socialBanner: '/static/banner.png',
