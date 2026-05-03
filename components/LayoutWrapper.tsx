@@ -13,8 +13,8 @@ interface Props {
 const LayoutWrapper = ({ children }: Props) => {
   return (
     <SectionContainer>
-      <div className='flex h-screen flex-col justify-between'>
-        <header className='flex items-center justify-end py-8'>
+      <div className='relative flex h-screen flex-col justify-between'>
+        <header className='absolute right-0 top-0 z-50 flex items-center justify-end pt-6 sm:static sm:py-8'>
           <div className='flex items-center text-base leading-5'>
             <div className='hidden sm:block'>
               {headerNavLinks.map(link => (

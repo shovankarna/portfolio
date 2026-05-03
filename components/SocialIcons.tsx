@@ -33,9 +33,14 @@ function SocialIcons(props: SocialIconsProps): React.ReactElement {
 function resolveIcon(entry: Tuple<string>): React.ReactNode {
   const [type, url] = entry;
 
+  const isGithub = type === ContactType.github;
+
   const props: IconBaseProps = {
-    className: 'icon cursor-pointer text-2xl mr-6',
-    color: type === ContactType.github ? '#f0ebeb' : Colors[type],
+    className: clsx(
+      'icon cursor-pointer text-2xl mr-6 transition-colors',
+      isGithub ? 'text-gray-900 dark:text-[#f0ebeb]' : '',
+    ),
+    color: isGithub ? undefined : Colors[type],
   };
 
   let icon: Maybe<React.ReactNode> = null;

@@ -1,10 +1,16 @@
 export const authorMetricsData = {
   heading: [
-    { text: 'I own the stack —', style: 'text-white font-bold' },
-    { text: 'from Backend to DB', style: 'text-gray-200 font-semibold' },
+    {
+      text: 'I own the stack —',
+      style: 'text-gray-900 dark:text-white font-bold',
+    },
+    {
+      text: 'from Backend to DB',
+      style: 'text-gray-600 dark:text-gray-200 font-semibold',
+    },
     {
       text: 'to what the user actually sees.',
-      style: 'text-gray-400 font-medium',
+      style: 'text-gray-500 dark:text-gray-400 font-medium',
     },
   ],
   subheading:
