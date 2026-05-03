@@ -41,11 +41,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             <div className='text-center text-gray-500 dark:text-gray-400'>
               {company}
             </div>
-          </div>
-
-          <div className='prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-8'>
-            {children}
-            <p className='mt-8'>
+            <div className='flex justify-center pt-6'>
               <a
                 className='!font-normal !text-black !no-underline dark:!text-white'
                 href={resume}
@@ -63,7 +59,11 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                   Resume
                 </RoughNotation>
               </a>
-            </p>
+            </div>
+          </div>
+
+          <div className='prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-8'>
+            {children}
             <h2 className='mt-8 mb-4 text-2xl font-semibold dark:text-white'>
               Skills
             </h2>

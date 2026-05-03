@@ -6,6 +6,8 @@ import CustomLink from './Link';
 import TOCInline from './TOCInline';
 import Pre from './Pre';
 import { BlogNewsletterForm } from './NewsletterForm';
+import AuthorMetrics from './AuthorMetrics';
+import Collapsible from './Collapsible';
 
 const Wrapper: React.ComponentType<{ layout: string }> = ({
   layout,
@@ -24,6 +26,8 @@ export const MDXComponents: ComponentMap = {
   wrapper: Wrapper,
   //@ts-ignore
   BlogNewsletterForm,
+  AuthorMetrics,
+  Collapsible,
 };
 
 interface Props {

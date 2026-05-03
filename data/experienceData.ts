@@ -7,6 +7,7 @@ export interface Position {
 
 export interface Experience {
   company: string;
+  role?: string;
   location?: string;
   url?: string;
   positions: Position[];
@@ -16,6 +17,7 @@ export interface Experience {
 export const experienceData: Experience[] = [
   {
     company: 'FedEx',
+    role: 'Full Stack Developer',
     location: 'Hyderabad, India',
     url: '',
     stack: [
@@ -45,6 +47,7 @@ export const experienceData: Experience[] = [
   },
   {
     company: 'Centre for Development of Advanced Computing (C-DAC)',
+    role: 'Project Engineer (FullStack Dev)',
     location: 'Hyderabad, India',
     url: 'https://cdac.in',
     stack: [
@@ -64,8 +67,8 @@ export const experienceData: Experience[] = [
     ],
     positions: [
       {
-        title: 'Project Engineer',
-        badge: 'Promoted from Associate',
+        title: 'Project Associate → Project Engineer',
+        badge: 'Full Stack Engineer',
         range: 'May 2023 – Oct 2025',
         description: [
           'Owned end-to-end backend development for a national-scale accreditation platform and SaaS LMS, sustaining **99.5%+ uptime** under concurrent load.',

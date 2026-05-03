@@ -33,7 +33,7 @@ const getBadgeStyles = (badge: string) => {
 };
 
 const Experience = () => {
-  const [expandedIndices, setExpandedIndices] = useState<number[]>([0]);
+  const [expandedIndices, setExpandedIndices] = useState<number[]>([]);
 
   const toggleExpand = (index: number) => {
     if (expandedIndices.includes(index)) {
@@ -94,9 +94,15 @@ const Experience = () => {
                     </div>
 
                     <div className='flex shrink-0 items-center gap-3 self-start sm:self-auto'>
-                      <span className='text-sm font-medium text-gray-500 dark:text-gray-400'>
-                        {rolesCount} {rolesCount === 1 ? 'role' : 'roles'}
-                      </span>
+                      {exp.role ? (
+                        <span className='text-sm font-medium text-gray-500 dark:text-gray-400'>
+                          {exp.role}
+                        </span>
+                      ) : (
+                        <span className='text-sm font-medium text-gray-500 dark:text-gray-400'>
+                          {rolesCount} {rolesCount === 1 ? 'role' : 'roles'}
+                        </span>
+                      )}
                       <div className='rounded-full bg-gray-100 p-1.5 text-gray-500 transition-colors group-hover:bg-indigo-50 group-hover:text-indigo-600 dark:bg-[#202020] dark:text-gray-400 dark:group-hover:bg-indigo-500/10 dark:group-hover:text-indigo-400'>
                         {isExpanded ? (
                           <FiChevronUp size={18} />
