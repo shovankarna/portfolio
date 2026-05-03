@@ -5,7 +5,6 @@ import { RoughNotation } from 'react-rough-notation';
 import { contact, ContactType } from 'config/contact';
 
 function Contact(): React.ReactElement {
-
   const contactLinks = [
     {
       type: ContactType.email,
@@ -27,44 +26,44 @@ function Contact(): React.ReactElement {
     },
   ];
 
-
   return (
     <>
       <PageSEO
         title={`Contact - ${siteMetadata.author}`}
         description={siteMetadata.description}
       />
-      <div className="fade-in divide-y-2 divide-gray-100 dark:divide-gray-800">
-        <Header title="Contact" />
-        <div className="container py-12">
+      <div className='fade-in divide-y-2 divide-gray-100 dark:divide-gray-800'>
+        <Header title='Contact' />
+        <div className='container py-12'>
           <p>
-            Do you have a project in mind? Want to hire me? or simply wanna chat? Feel free to reach out to me via:
+            Do you have a project in mind? Want to hire me? or simply wanna
+            chat? Feel free to reach out to me via:
           </p>
-          <ul className="mt-4 space-y-4">
+          <ul className='mt-4 space-y-4'>
             {contactLinks
-              .filter((link) => link.url) // Only render links with valid URLs
-              .map((link) => (
+              .filter(link => link.url) // Only render links with valid URLs
+              .map(link => (
                 <li key={link.type}>
-                  <span className="font-bold">{link.label}:</span>{' '}
+                  <span className='font-bold'>{link.label}:</span>{' '}
                   <a
                     href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='text-blue-500 hover:underline'
                   >
                     {link.urlLabel}
                   </a>
                 </li>
               ))}
           </ul>
-          <p className="mt-6">
+          <p className='mt-6'>
             <RoughNotation
               show
-              type="box"
+              type='box'
               strokeWidth={2}
               animationDelay={250}
               animationDuration={2000}
-              color="#34D399"
+              color='#34D399'
             >
               Let's connect and make something amazing together!
             </RoughNotation>

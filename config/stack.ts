@@ -2,25 +2,23 @@ import { Colors } from './colors';
 
 export enum Stack {
   // Languages
-  typescript,
   javascript,
-  python,
   java,
 
   // Frontend
   reactjs,
-  nextjs,
 
-  // Backend
+  // Backend & Identity
   springboot,
   springcloud,
   microservices,
+  keycloak,
 
-  // Cloud
+  // Cloud & Storage
   aws,
+  minio,
 
   // Messaging
-  nats,
   kafka,
   rabbitmq,
 
@@ -30,29 +28,39 @@ export enum Stack {
   postgres,
   redis,
 
-  // Tools
+  // DevOps & Tools
   docker,
   git,
   github,
+  jenkins,
+  githubactions,
+
+  // Observability
+  splunk,
+  appdynamics,
+  dynatrace,
 }
 
 export const WorkStack = [
   Stack.java,
   Stack.javascript,
-  Stack.typescript,
-  Stack.python,
   Stack.reactjs,
   Stack.springboot,
   Stack.springcloud,
   Stack.microservices,
+  Stack.keycloak,
   Stack.rabbitmq,
   Stack.mysql,
   Stack.postgres,
   Stack.redis,
   Stack.aws,
+  Stack.minio,
   Stack.docker,
-  Stack.git,
-  Stack.github,
+  Stack.jenkins,
+  Stack.githubactions,
+  Stack.splunk,
+  Stack.appdynamics,
+  Stack.dynatrace,
 ];
 
 type StackInfoMap = {
@@ -61,17 +69,9 @@ type StackInfoMap = {
 };
 
 export const StackInfo: Record<Stack, StackInfoMap> = {
-  [Stack.typescript]: {
-    value: 'TypeScript',
-    color: Colors.typescript,
-  },
   [Stack.javascript]: {
     value: 'JavaScript',
     color: Colors.javascript,
-  },
-  [Stack.python]: {
-    value: 'Python',
-    color: Colors.python,
   },
   [Stack.java]: {
     value: 'Java',
@@ -80,10 +80,6 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.reactjs]: {
     value: 'ReactJS',
     color: Colors.react,
-  },
-  [Stack.nextjs]: {
-    value: 'Next.js',
-    color: Colors.nextjs,
   },
   [Stack.springboot]: {
     value: 'Spring Boot',
@@ -97,13 +93,17 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Microservices',
     color: Colors.microservices,
   },
+  [Stack.keycloak]: {
+    value: 'Keycloak',
+    color: Colors.keycloak,
+  },
   [Stack.aws]: {
     value: 'AWS',
     color: Colors.aws,
   },
-  [Stack.nats]: {
-    value: 'NATS',
-    color: Colors.nats,
+  [Stack.minio]: {
+    value: 'MinIO',
+    color: Colors.minio,
   },
   [Stack.kafka]: {
     value: 'Kafka',
@@ -140,5 +140,25 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.github]: {
     value: 'GitHub',
     color: Colors.github,
+  },
+  [Stack.jenkins]: {
+    value: 'Jenkins',
+    color: Colors.jenkins,
+  },
+  [Stack.githubactions]: {
+    value: 'GitHub Actions',
+    color: Colors.githubactions,
+  },
+  [Stack.splunk]: {
+    value: 'Splunk',
+    color: Colors.splunk,
+  },
+  [Stack.appdynamics]: {
+    value: 'AppDynamics',
+    color: Colors.appdynamics,
+  },
+  [Stack.dynatrace]: {
+    value: 'Dynatrace',
+    color: Colors.dynatrace,
   },
 };

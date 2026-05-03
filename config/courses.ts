@@ -1,5 +1,5 @@
-import { Maybe, Tuple } from "types";
-import { Stack } from "./stack";
+import { Maybe, Tuple } from 'types';
+import { Stack } from './stack';
 
 export type CourseContent = {
   name: string;

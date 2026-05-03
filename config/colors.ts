@@ -9,13 +9,16 @@ export const Colors = {
   react: '#61DAFB',
   nextjs: '#000000',
 
-  // Backend
+  // Backend & Identity
   springboot: '#6DB33F',
   springcloud: '#6DB33F',
   microservices: '#1890FF',
+  keycloak: '#4A90E2',
 
-  // Cloud
+  // Cloud & Storage
   aws: '#FF9900',
+  azure: '#0089D6',
+  minio: '#C7202C',
 
   // Messaging
   nats: '#199bfc',
@@ -28,14 +31,21 @@ export const Colors = {
   postgres: '#336791',
   redis: '#D82C20',
 
-  // Tools
+  // DevOps & Tools
   docker: '#2496ED',
   git: '#F05032',
   github: '#181717',
+  jenkins: '#D24939',
+  githubactions: '#2088FF',
 
-  twitter: "#1da1f2",
-  email: "#c71610",
-  linkedin: "#0077B5",
-  facebook: "#1877F2",
-  reddit: "#FF5700"
+  // Observability
+  splunk: '#000000',
+  appdynamics: '#5927A0',
+  dynatrace: '#1496FF',
+
+  twitter: '#1da1f2',
+  email: '#c71610',
+  linkedin: '#0077B5',
+  facebook: '#1877F2',
+  reddit: '#FF5700',
 };

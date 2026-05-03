@@ -34,6 +34,7 @@ In this blog, you'll learn the basics of creating MDX pages and how to structure
 ## Writing Your First MDX Page
 
 To create an MDX page, you need:
+
 1. An **MDX file** (e.g., `my-first-blog.mdx`).
 2. A system to render MDX, such as **Next.js** with `@next/mdx` or Gatsby with `gatsby-plugin-mdx`.
 
@@ -41,7 +42,7 @@ To create an MDX page, you need:
 
 Here’s a basic structure:
 
-```mdx
+````mdx
 ---
 title: 'Your Blog Title'
 date: 'YYYY-MM-DD'
@@ -57,7 +58,7 @@ authors: ['default']
 Write content using Markdown syntax. For example:
 
 - Use `#` for headings.
-- Write **bold** or *italic* text.
+- Write **bold** or _italic_ text.
 - Create lists:
   - Bullet points
   - Sub-points
@@ -69,4 +70,6 @@ You can import and use React components inside an MDX file:
 ```jsx
 import { Button } from '@/components/ui/button';
 
-<Button onClick={() => alert('Hello!')}>Click Me</Button>
+<Button onClick={() => alert('Hello!')}>Click Me</Button>;
+```
+````
