@@ -14,7 +14,7 @@ export const authorMetricsData = {
     },
   ],
   subheading:
-    "Most engineers hand off at the API boundary. I don't. I design the distributed systems powering the backend — and make sure what reaches the screen is just as fast.",
+    'I specialize in building backend systems, but I enjoy working across the entire stack when needed. From APIs and databases to frontend applications, I like understanding how the whole system behaves in production.',
   metrics: [
     {
       value: '100K+',
@@ -25,21 +25,20 @@ export const authorMetricsData = {
   ],
   features: [
     {
-      title: 'Distributed systems that hold',
+      title: 'Distributed Systems & Microservices',
       description:
-        'High-concurrency microservices, event-driven pipelines, fault-tolerant architectures — built for the edge cases, not just the happy path.',
+        'Designing microservices, building event-driven workflows, integrating distributed systems, and optimizing applications for performance and reliability.',
     },
     {
-      title: 'Architecture you can reason about',
+      title: 'Scalable & Maintainable Software',
       description:
-        'Clean service boundaries, smart data modeling, zero-downtime deployments — systems your team can still understand six months later.',
+        'Writing software that is scalable, maintainable, and easy for other engineers to work with.',
     },
     {
-      title: 'Performance, end to end',
+      title: 'Practical & Built to Last',
       description:
-        'Query tuning and caching on the backend. Snappy FCP and TTI on the frontend. No millisecond wasted anywhere in the chain.',
+        "Focusing on delivering solutions that are practical and built to last, whether it's designing a service boundary, tuning a database query, or improving a user-facing workflow.",
     },
   ],
-  footer:
-    "If your system buckles at 10x traffic — or your UI makes users wait — your stack made a promise it couldn't keep. I build stacks that keep their promises.",
+  footer: '',
 };
