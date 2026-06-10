@@ -12,11 +12,9 @@ export enum Stack {
   springboot,
   springcloud,
   microservices,
-  keycloak,
 
   // Cloud & Storage
   aws,
-  minio,
 
   // Messaging
   kafka,
@@ -48,13 +46,12 @@ export const WorkStack = [
   Stack.springboot,
   Stack.springcloud,
   Stack.microservices,
-  Stack.keycloak,
+  Stack.kafka,
   Stack.rabbitmq,
   Stack.mysql,
   Stack.postgres,
   Stack.redis,
   Stack.aws,
-  Stack.minio,
   Stack.docker,
   Stack.jenkins,
   Stack.githubactions,
@@ -93,17 +90,9 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
     value: 'Microservices',
     color: Colors.microservices,
   },
-  [Stack.keycloak]: {
-    value: 'Keycloak',
-    color: Colors.keycloak,
-  },
   [Stack.aws]: {
     value: 'AWS',
     color: Colors.aws,
-  },
-  [Stack.minio]: {
-    value: 'MinIO',
-    color: Colors.minio,
   },
   [Stack.kafka]: {
     value: 'Kafka',
